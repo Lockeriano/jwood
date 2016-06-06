@@ -22,24 +22,33 @@ a, ul, li, p, h1, h2, h3, h4, h5, h6 {
   image-rendering: pixelated;
 }
 	.navbar {
-		display: flex;
-		margin: 0 auto;
+		position: fixed;
 		padding-bottom: 40px;
 		padding-top: 40px;
-		justify-content: space-around;
-		width: 600px;	
+		width: 100%;
 		border-bottom: 1px solid #ffffff;
- }
-		li {
-			display: inline-flex;
-			font-size: 24px;
-			font-family: Nexa Light;
-		}
-				a {
-					text-decoration: none;
-					text-transform: uppercase;
-					color: $text;
-				}
+
+ }	
+ 		ul {
+		  list-style: none;
+		  margin: 0 25%;
+		  display: flex;
+		  flex-wrap: nowrap;
+		  justify-content: space-around;
+
+ 		}
+			li {
+			}
+			a {
+				display: block;
+				text-decoration: none;
+				text-transform: uppercase;
+				color: $text;
+				font-family: Nexa;
+				font-weight: 300;
+				font-size: 24px;
+			}
+
 	img {
 		display: block;
 		margin-left: auto;
@@ -91,3 +100,9 @@ a, ul, li, p, h1, h2, h3, h4, h5, h6 {
 			justify-content: center;
 			padding-bottom: 50px;
 		}
+
+
+
+.about-section {
+
+}
