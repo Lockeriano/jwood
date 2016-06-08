@@ -3,11 +3,6 @@ body {
   margin: 0;
   padding: 0; }
 
-a, ul, li, p, h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  padding: 0;
-  text-decoration: none; }
-
 .page-header {
   position: relative;
   background: url(../img/back-image.png) no-repeat;
@@ -19,6 +14,13 @@ a, ul, li, p, h1, h2, h3, h4, h5, h6 {
   image-rendering: crisp-edges;
   image-rendering: pixelated; }
 
+.page-header img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 150px;
+  padding-bottom: 100px; }
+
 .navbar {
   position: fixed;
   padding-bottom: 40px;
@@ -26,28 +28,23 @@ a, ul, li, p, h1, h2, h3, h4, h5, h6 {
   width: 100%;
   border-bottom: 1px solid #ffffff; }
 
-ul {
+.navbar ul {
   list-style: none;
   margin: 0 25%;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-around; }
 
-a {
-  display: block;
+.navbar li {
+  display: inline-flex; }
+
+.navbar a {
   text-decoration: none;
   text-transform: uppercase;
   color: #f1f1f1;
   font-family: Nexa;
   font-weight: 300;
   font-size: 24px; }
-
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 150px;
-  padding-bottom: 100px; }
 
 .logo-text {
   text-align: center;
@@ -73,7 +70,7 @@ img {
   flex-direction: column;
   justify-content: center; }
 
-p {
+.scroll-header p {
   display: flex;
   font-family: Nexa;
   font-size: 18px;
@@ -84,7 +81,61 @@ p {
   font-weight: 500;
   padding-bottom: 10px; }
 
-i {
+.scroll-header i {
   color: #f1f1f1;
+  justify-content: center;
+  padding-bottom: 50px; }
+
+.columns-container {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  padding: 0 auto;
+  padding-left: 50px; }
+
+.about-holder img {
+  padding-top: 175px;
+  margin-left: 30px;
+  width: 90%;
+  height: auto; }
+
+.about-holder h2 {
+  padding-top: 200px;
+  font-family: Nexa;
+  font-size: 52px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #202020;
+  width: 400px; }
+
+.about-holder > p {
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 50px;
+  color: #202020;
+  width: 700px; }
+
+.about-holder .signature {
+  font-family: Felt Tip Woman;
+  font-size: 34px;
+  color: #202020; }
+
+.scroll-header-about p {
+  display: flex;
+  font-family: Nexa;
+  font-size: 18px;
+  justify-content: center;
+  color: #bebebe;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  padding-top: 50px; }
+
+.scroll-header-about i {
+  color: #bebebe;
   justify-content: center;
   padding-bottom: 50px; }
