@@ -81,7 +81,7 @@ body {
 		justify-content: center;
 	}
 
-		.scroll-header p {
+		.scroll-header > p {
 			display: flex;
 			font-family: Nexa;
 			font-size: 18px;
@@ -90,10 +90,11 @@ body {
 			text-transform: uppercase;
 			letter-spacing: 2px;
 			font-weight: 500;
+			margin: 0 auto;
 			padding-bottom: 10px;
 		}
 
-		.scroll-header i {
+		.scroll-header > i {
 			color: $text;
 			justify-content: center;
 			padding-bottom: 50px;
@@ -146,22 +147,72 @@ body {
 			font-size: 34px;
 			color: #202020;
 		}
-		.scroll-header-about p {
-			display: flex;
-			font-family: Nexa;
-			font-size: 18px;
-			justify-content: center;
-			color: #bebebe;
-			text-transform: uppercase;
-			letter-spacing: 2px;
-			font-weight: 500;
-			padding-top: 50px;
-		}
 
-	.scroll-header-about i {
+	.scroll-header-about > p {
+		display: flex;
+		font-family: Nexa;
+		font-size: 18px;
+		justify-content: center;
+		color: #bebebe;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		font-weight: 500;
+		padding-top: 50px;
+		line-height: 1px;
+	}
+
+	.scroll-header-about > i {
 		color: #bebebe;
 		justify-content: center;
 		padding-bottom: 50px;
 	}
 
+	.portfolio-section {	
+		background: url(../img/portfolio-backimg.png) no-repeat;
+		background-position: 50%;
+		padding-top: 190px;
+		}
 
+		.portfolio-section > h1 {
+			font-size: 60px;
+			font-family: Nexa;
+			font-weight: 300;
+			color: $text;
+			text-transform: uppercase;
+			margin: 0 auto;
+			text-align: center;
+			padding-bottom: 60px;
+			letter-spacing: 8px;
+		}
+
+		.images-container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		  }
+
+		  .images-container img {
+		  	image-rendering: auto;
+			  image-rendering: crisp-edges;
+			  image-rendering: pixelated;
+		  	margin: 10px 10px;
+		  }
+
+		  .scroll-header-portfolio > p {
+		  	display: flex;
+				font-family: Nexa;
+				font-size: 18px;
+				justify-content: center;
+				color: #bebebe;
+				text-transform: uppercase;
+				letter-spacing: 2px;
+				font-weight: 500;
+				padding-top: 50px;
+				line-height: 1px;
+		  }
+
+		  .scroll-header-portfolio > i {
+  			color: #bebebe;
+				justify-content: center;
+				padding-bottom: 40px;
+		  }
