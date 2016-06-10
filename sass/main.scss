@@ -6,171 +6,226 @@ body {
 	padding: 0;
 }
 
-.page-header {
-	position: relative;
-	background: url(../img/back-image.png) no-repeat;
-	background-size: cover;
-	background-position: 50%;
-	width: 100%;
-	height: 100%;
-	image-rendering: auto;
-  image-rendering: crisp-edges;
-  image-rendering: pixelated;
-}
-	.page-header img {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		padding-top: 150px;
-		padding-bottom: 100px;
-	}
-
-	.navbar {
-		padding-bottom: 40px;
-		padding-top: 40px;
+	.page-header {
+		position: relative;
+		background: url(../img/back-image.png) no-repeat;
+		background-size: cover;
+		background-position: 50%;
 		width: 100%;
-		border-bottom: 1px solid #ffffff;
+		height: 100%;
+		image-rendering: auto;
+	  image-rendering: crisp-edges;
+	  image-rendering: pixelated;
+	}
+		.page-header img {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			padding-top: 150px;
+			padding-bottom: 100px;
+		}
 
- }	
- 		.navbar ul {
-		  list-style: none;
-		  margin: 0 25%;
-		  display: flex;
-		  flex-wrap: nowrap;
-		  justify-content: space-around;
+		.navbar {
+			padding-top: 40px;
+			width: 100%;
+	 }	
+	 		.navbar-header-border {
+	 			border-bottom: 1px solid #ffffff;
+	 			margin: 0 5%;
+	 			padding-bottom: 40px;
+	 		}
+	 		.navbar ul {
+			  list-style: none;
+			  margin: 0 25%;
+			  display: flex;
+			  flex-wrap: nowrap;
+			  justify-content: space-around;
 
- 		}
-			.navbar li {
-				display: inline-flex;
-			}
-			
-			.navbar a {
-				text-decoration: none;
+	 		}
+				.navbar li {
+					display: inline-flex;
+				}
+				
+				.navbar a {
+					text-decoration: none;
+					text-transform: uppercase;
+					color: $text;
+					font-family: Nexa;
+					font-weight: 300;
+					font-size: 24px;
+				}
+
+		.logo-text {
+			text-align: center;
+			padding-bottom: 110px;
+		}
+			.bold, .light {
+				display: inline-block;
+				margin: 0 auto;
+				font-size: 60px;
 				text-transform: uppercase;
 				color: $text;
+		}
+			.bold {
 				font-family: Nexa;
-				font-weight: 300;
-				font-size: 24px;
+				font-weight: 500;
 			}
 
-	.logo-text {
-		text-align: center;
-		padding-bottom: 110px;
+			.light {
+				font-family: Nexa;
+				font-weight: 300;
+			}
+
+		.scroll-header {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+
+			.scroll-header > p {
+				display: flex;
+				font-family: Nexa;
+				font-size: 18px;
+				justify-content: center;
+				color: $text;
+				text-transform: uppercase;
+				letter-spacing: 2px;
+				font-weight: 500;
+				margin: 0 auto;
+				padding-bottom: 10px;
+			}
+
+			.scroll-header > i {
+				color: $text;
+				justify-content: center;
+				padding-bottom: 50px;
+			}
+
+
+
+	.about-section a {
+		text-decoration: none;
+		text-transform: uppercase;
+		color: $text;
+		font-family: Nexa;
+		font-weight: 300;
+		font-size: 24px;
+		color: #bebebe;
 	}
-		.bold, .light {
-			display: inline-block;
+
+		.navbar {
+			padding-top: 40px;
+			width: 100%;
+	 }	
+	 		.navbar-about-border {
+	 			border-bottom: 1px solid #bebebe;
+	 			margin: 0 5%;
+	 			padding-bottom: 40px;
+	 		}
+		 		.navbar > ul {
+				  list-style: none;
+				  margin: 0 25%;
+				  display: flex;
+				  flex-wrap: nowrap;
+				  justify-content: space-around;
+		 		}
+
+		.columns-container {
+			-webkit-column-count: 2;
+	   	-moz-column-count: 2;
+	    column-count: 2;
+			display: block;
+			position: relative;
 			margin: 0 auto;
-			font-size: 60px;
-			text-transform: uppercase;
-			color: $text;
-	}
-		.bold {
-			font-family: Nexa;
-			font-weight: 500;
+			padding: 0 auto;
+			padding-left: 50px;
 		}
 
-		.light {
-			font-family: Nexa;
-			font-weight: 300;
-		}
+			.about-holder img {
+				padding-top: 75px;
+				margin-left: 30px;
+				width: 90%;
+				height: auto;
+			}
 
-	.scroll-header {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-	}
+				.content-holder {
+					padding-top: 70px;
+				}
 
-		.scroll-header > p {
+				.content-holder > h2 {
+					font-family: Nexa;
+					font-size: 52px;
+					font-weight: 300;
+					text-transform: uppercase;
+					color: #202020;
+					width: 400px;
+				}
+
+				.content-holder > p {
+					font-family: Open Sans;
+					font-weight: 400;
+					font-size: 22px;
+					line-height: 50px;
+					color: #202020;
+					width: 700px;
+				}
+
+				.content-holder .signature {
+					font-family: Felt Tip Woman;
+					font-size: 34px;
+					color: #202020;
+				}
+
+		.scroll-header-about > p {
 			display: flex;
 			font-family: Nexa;
 			font-size: 18px;
 			justify-content: center;
-			color: $text;
+			color: #bebebe;
 			text-transform: uppercase;
 			letter-spacing: 2px;
 			font-weight: 500;
-			margin: 0 auto;
-			padding-bottom: 10px;
+			padding-top: 50px;
+			line-height: 1px;
 		}
 
-		.scroll-header > i {
-			color: $text;
+		.scroll-header-about > i {
+			color: #bebebe;
 			justify-content: center;
 			padding-bottom: 50px;
 		}
 
-
-
-.about-section {
-}
-
-	.columns-container {
-		-webkit-column-count: 2;
-   	-moz-column-count: 2;
-    column-count: 2;
-		display: block;
-		position: relative;
-		margin: 0 auto;
-		padding: 0 auto;
-		padding-left: 50px;
-	}
-
-		.about-holder img {
-			padding-top: 175px;
-			margin-left: 30px;
-			width: 90%;
-			height: auto;
-		}
-
-		.about-holder h2 {
-			padding-top: 200px;
-			font-family: Nexa;
-			font-size: 52px;
-			font-weight: 300;
-			text-transform: uppercase;
-			color: #202020;
-			width: 400px;
-		}
-
-		.about-holder > p {
-			font-family: Open Sans;
-			font-weight: 400;
-			font-size: 22px;
-			line-height: 50px;
-			color: #202020;
-			width: 700px;
-		}
-
-		.about-holder .signature {
-			font-family: Felt Tip Woman;
-			font-size: 34px;
-			color: #202020;
-		}
-
-	.scroll-header-about > p {
-		display: flex;
-		font-family: Nexa;
-		font-size: 18px;
-		justify-content: center;
-		color: #bebebe;
-		text-transform: uppercase;
-		letter-spacing: 2px;
-		font-weight: 500;
-		padding-top: 50px;
-		line-height: 1px;
-	}
-
-	.scroll-header-about > i {
-		color: #bebebe;
-		justify-content: center;
-		padding-bottom: 50px;
-	}
-
 	.portfolio-section {	
 		background: url(../img/portfolio-backimg.png) no-repeat;
 		background-position: 50%;
-		padding-top: 190px;
 		}
+
+	.portfolio-section a {
+		text-decoration: none;
+		text-transform: uppercase;
+		color: $text;
+		font-family: Nexa;
+		font-weight: 300;
+		font-size: 24px;
+		color: #bebebe;
+	}
+
+		.navbar {
+			padding-top: 40px;
+			width: 100%;
+	 	}	
+	 		.navbar-portfolio-border {
+	 			border-bottom: 1px solid #bebebe;
+	 			margin: 0 5%;
+	 			padding-bottom: 40px;
+	 		}
+		 		.navbar > ul {
+				  list-style: none;
+				  margin: 0 25%;
+				  display: flex;
+				  flex-wrap: nowrap;
+				  justify-content: space-around;
+		 		}
 
 		.portfolio-section > h1 {
 			font-size: 60px;
@@ -182,6 +237,7 @@ body {
 			text-align: center;
 			padding-bottom: 60px;
 			letter-spacing: 8px;
+			padding-top: 90px;
 		}
 
 		.images-container {
@@ -215,3 +271,82 @@ body {
 				justify-content: center;
 				padding-bottom: 40px;
 		  }
+
+	.contact-section {
+		position: relative;
+		color: #202020;
+		padding-bottom: 80px;
+	}
+
+	.contact-section a {
+		text-decoration: none;
+		text-transform: uppercase;
+		color: $text;
+		font-family: Nexa;
+		font-weight: 300;
+		font-size: 24px;
+		color: #bebebe;
+	}
+		.navbar {
+			padding-top: 40px;
+			width: 100%;
+	 }	
+	 		.navbar-contact-border {
+	 			border-bottom: 1px solid #bebebe;
+	 			margin: 0 5%;
+	 			padding-bottom: 40px;
+	 		}
+		 		.navbar > ul {
+				  list-style: none;
+				  margin: 0 25%;
+				  display: flex;
+				  flex-wrap: nowrap;
+				  justify-content: space-around;
+		 		}
+		.contact-holder {
+			padding-top: 205px;
+		}
+		
+		.contact-holder > h3 {
+			font-family: Nexa;
+			font-weight: 500;
+			font-size: 30px;
+			text-align: center;
+			text-transform: uppercase;
+		}
+
+		.contact-holder > h1 {
+			font-family: Nexa;
+			font-weight: 300;
+			font-size: 60px;
+			text-align: center;
+			text-transform: uppercase;
+		}
+
+		.contact-holder > h2 {
+			font-family: Nexa;
+			font-weight: 300;
+			font-size: 48px;
+			text-align: center;
+			text-transform: uppercase;
+		}
+			.socials-holder {
+				text-align: center;
+			}
+
+			.socials-holder > a {
+				margin: 5px;
+			}
+
+	footer {
+		border-top: 1px #bebebe solid;
+		margin: 0 5%;
+	}
+	footer > p {
+		text-transform: uppercase;
+		font-size: 18px;
+		font-family: Nexa;
+		font-weight: 300;
+		color: #bebebe;
+		text-align: center;
+	}

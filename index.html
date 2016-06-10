@@ -11,12 +11,14 @@
 <body>
 	<header class="page-header">
 		<div class="navbar">
-			<ul>	
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About Me</a></li>
-				<li><a href="#">Portfolio</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
+			<div class="navbar-header-border">
+				<ul>	
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About Me</a></li>
+					<li><a href="#">Portfolio</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
 		</div>
 		<img src="img/logo.png" alt="logo">
 		<div class="logo-text"><h1 class="bold">Jwood</h1><h1 class="light">Photography</h></div>
@@ -28,13 +30,25 @@
 	</header>
 
 	<section class="about-section">
+		<div class="navbar">
+			<div class="navbar-about-border">
+				<ul>	
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About Me</a></li>
+					<li><a href="#">Portfolio</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+		</div>
 		<div class="columns-container">
 			<div class="about-holder">
 				<img src="img/wood-photo.png"alt="About Image">
-				<h2>About Me</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-				<p class="signature">Jason Wood</p>
+				<div class="content-holder">
+					<h2>About Me</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					<p class="signature">Jason Wood</p>
+				</div>
 			</div>
 		</div>
 
@@ -45,6 +59,16 @@
 	</section>
 
 	<section class="portfolio-section">
+			<div class="navbar">
+				<div class="navbar-portfolio-border">
+					<ul>	
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About Me</a></li>
+						<li><a href="#">Portfolio</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div>
+			</div>
 		<h1>Portfolio</h1>
 			<div class="images-container">
 				<img src="img/portfolio-01.png" alt="1 Image">
@@ -65,49 +89,33 @@
 	</section>
 
 	<section class="contact-section">
-		<h3>Mail:</h3>
-		<p>Jason@wood.com</p>
+		<div class="navbar">
+			<div class="navbar-contact-border">
+				<ul>	
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About Me</a></li>
+					<li><a href="#">Portfolio</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="contact-holder">
+			<h3>Mail:</h3>
+			<h1>Jason@wood.com</h1>
 
-		<h3>Phone:</h3>
-		<p>+44 212 432 444</p>
+			<h3>Phone:</h3>
+			<h2>+44 212 432 444</h2>
 
-		<h3>social media:</h3>
-		<p>Facebook</p>
-		<p>Twitter</p>
-		<p>Instagram</p>
+			<h3>social media:</h3>
+			<div class="socials-holder">
+				<a href><img src="img/facebook.png" alt="Facebook"></a>
+				<a href><img src="img/twitter.png" alt="Twitter"></a>
+				<a href><img src="img/instagram.png" alt="Instagram"></a>
+			</div>
+		</div>
 	</section>
 
 	<footer>
-		<p>DESIGNED by Pawel szymankiewicz</p>
+		<p>COVERED by Patryk Skrzyniarz</p>
 	</footer>
-
-	<script type='text/javascript'>
-		$(function() {
-    // Stick the #nav to the top of the window
-    var nav = $('.navbar');
-    var navHomeY = nav.offset().top;
-    var isFixed = false;
-    var $w = $(window);
-    $w.scroll(function() {
-        var scrollTop = $w.scrollTop();
-        var shouldBeFixed = scrollTop > navHomeY;
-        if (shouldBeFixed && !isFixed) {
-            nav.css({
-                position: 'fixed',
-                top: 0,
-                left: nav.offset().left,
-                width: nav.width()
-            });
-            isFixed = true;
-        }
-        else if (!shouldBeFixed && isFixed)
-        {
-            nav.css({
-                position: 'static'
-            });
-            isFixed = false;
-        }
-    });
-});
-	</script>
 </body>
